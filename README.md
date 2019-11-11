@@ -1,5 +1,5 @@
 # NLP at SemEval-2019 Task6: Detecting Offensive language using Neural Networks
-This is a repository containing models submitted as part of our participation in SemEval Task 6 OffensEval: Idenstifying and categorizing Offensive lnaguage in social media by SemEval 2019 by (Zampieri et al.,2019b)
+This is a repository containing models submitted as part of our participation in SemEval Task 6 OffensEval: Idenstifying and categorizing Offensive lnaguage in social media by SemEval 2019 by (Zampieri et al.,2019b).
 
 # Files
 1. Preprocess.py Some of basic Preprocessing as Step 1 to clean the data.
@@ -16,6 +16,7 @@ gensim: 3.7.0 &#12288;
 tensorflow: 1.14.0 &#12288;
 nltk:3.4 &#12288;
 pandas: 0.23.4 &#12288;
+
 
 
 
