@@ -1,6 +1,10 @@
 # NLP at SemEval-2019 Task6: Detecting Offensive language using Neural Networks
 This is a repository containing models submitted as part of our participation in SemEval Task 6 OffensEval: Idenstifying and categorizing Offensive lnaguage in social media by SemEval 2019 by (Zampieri et al.,2019b)
 
+# Models
+1. TaskA.py: It is a classification model dealing with 2 classes.
+2. TaskB.py: This model is utilizing both the word and pos features. POS Tag for all the sentences can be get by POS_tag.py in form of text file and then inserted at line . File_name
+
 # Dependencies
 Python:2.7.5 &#12288;
 numpy: 1.16.0 &#12288;
