@@ -98,7 +98,7 @@ for epoch in Epoch:
 			filepath='CNN_BiSTM_Attn'+'_'+str(epoch)+'_'+str(bs)+".hdf5"
 			checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 			callbacks_list = [checkpoint]
-			model.fit(data[train],labels_one_hot_encoded[train],validation_data = (data[test], labels_one_hot_encoded[test]),callbacks=callbacks_list,epochs = 		epoch,batch_size = bs,verbose = 2)
+			model.fit(data[train],labels_one_hot_encoded[train],validation_data = (data[test], labels_one_hot_encoded[test]),callbacks=callbacks_list,epochs = epoch,batch_size = bs,verbose = 2)
 			model = load_model('CNN_BiSTM_Attn'+'_'+str(epoch)+'_'+str(bs)+".hdf5")
 			scores = model.evaluate(data[test], labels_one_hot_encoded[test],
 				            batch_size=bs)
