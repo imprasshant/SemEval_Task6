@@ -34,7 +34,7 @@ Epoch = [3,5]
 Batch_size = [16,32] 
 max_length = 40  #length of longest sentence
 seed = 7
-Embedding_Dim = 300
+Embedding_Dim = 100
 NUM_WORDS = 50000
 
 # the file "g" is for reading the labels where as "f" have texts(tweets)
