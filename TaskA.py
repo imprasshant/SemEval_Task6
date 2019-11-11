@@ -75,7 +75,7 @@ for epoch in Epoch:
 	for bs in Batch_size:
 		for train,test in kfold.split(data,labels):
 			input_1 = Input(shape=(max_length,), dtype='int32')
-			embedding = Embedding(input_dim=vocab_size, output_dim=100, weights=[embeddings_matrix], input_length=max_length, mask_zero=False, 				trainable=True)(input_1)
+			embedding = Embedding(input_dim=vocab_size, output_dim=Embedding_Dim, weights=[embeddings_matrix], input_length=max_length, mask_zero=False, 				trainable=True)(input_1)
 			bigram_branch = Conv1D(filters=100, kernel_size=2, padding='same', activation='relu', strides=1)(embedding)
 			pooling_1 = MaxPooling1D(pool_size = 4)(bigram_branch)
 			trigram_branch = Conv1D(filters=100, kernel_size=3, padding='same', activation='relu', strides=1)(embedding)
