@@ -71,7 +71,7 @@ for word,i in word_index_POS.items():
 		POS_TAG_Embedding_matrix[i] = POS_embedding
 
 #Reading the class value to convert it into one hot encoded.
-classes = pd.read_csv("_class.csv")
+classes = pd.read_csv("File_class.csv")  ##This contains the class of each instance in the same order of input text sentences.
 labels = classes['class'].values
 labels_one_hot_encoded = np_utils.to_categorical(labels,2)
 vocab_size=min(len(word_index)+1,(NUM_WORDS))
