@@ -22,7 +22,7 @@ from numpy import argmax
 import pandas as pd
 
 
-Embedding_Dim = 300
+Embedding_Dim = 100
 max_length = 40
 seed = 7
 Epoch = [3,5]
