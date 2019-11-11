@@ -3,7 +3,7 @@ This is a repository containing models submitted as part of our participation in
 
 # Dependencies
 Python:2.7.5 &#12288;
-numpy: 1.16.0 \\
+numpy: 1.16.0 &#12288;
 gensim: 3.7.0 \\
 tensorflow: 1.14.0 \\
 nltk:3.4 \\
