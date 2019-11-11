@@ -3,9 +3,10 @@ This is a repository containing models submitted as part of our participation in
 
 # Models
 1. TaskA.py: It is a classification model dealing with 2 classes.
-2. TaskB.py: This model is utilizing both the word and pos features. At first POS Tag for all the sentences can be get by POS_tag.py in form of text file and then inserted at line . 
-3. TaskC.py
+2. TaskB.py: This model is utilizing both the word and pos features. At first POS Tag for all the sentences can be get by POS_tag.py in form of text file and then inserted at line 50. 
+3. TaskC.py : This is for the third task i.e Target Identification
 4. POS_tag.py: This can be used to get the POS tag for all the sentences using nltk and the output text file can be inserted at line 
+5. Preprocess.py
 
 # Dependencies
 Python:2.7.5 &#12288;
