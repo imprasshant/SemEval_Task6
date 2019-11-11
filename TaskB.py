@@ -105,7 +105,7 @@ for epoch in Epoch:
 		for train,test in kfold.split(data,labels):
 			input_1 = Input(shape=(max_length,), dtype='int32')
 			POS_input = Input(shape = (max_length,),dtype = 'int32')
-			tweet_encoder = Embedding(input_dim=vocab_size, output_dim=100, weights=[embeddings_matrix], input_length=max_length, mask_zero=False, 				trainable=True)(input_1)
+			tweet_encoder = Embedding(input_dim=vocab_size, output_dim=Embedding_Dim, weights=[embeddings_matrix], input_length=max_length, mask_zero=False, 				trainable=True)(input_1)
 			POS_embedding = Embedding(input_dim = POS_TAG_SIZE,output_dim = EMB_DIM,weights = [POS_TAG_Embedding_matrix],input_length = max_length,mask_zero = False,trainable = True)(POS_input)
 			bilstm_1 =Bidirectional (LSTM(100, return_sequences = True,batch_input_shape=(None, 40, 100), input_shape=(40, 100)))(tweet_encoder)
 			bilstm_2 = Bidirectional(LSTM(100, return_sequences = False,batch_input_shape=(None, 40, 100), input_shape=(40, 100)))(bilstm_1)
