@@ -23,7 +23,7 @@ pandas: 0.23.4 &#12288;
 # Link to Paper 
 https://www.aclweb.org/anthology/S19-2105.pdf
 
-# References
+# Reference
 @inproceedings{kapil2019nlp,
   title={NLP at SemEval-2019 Task 6: Detecting Offensive language using Neural Networks},
   author={Kapil, Prashant and Ekbal, Asif and Das, Dipankar},
