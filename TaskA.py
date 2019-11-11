@@ -30,7 +30,7 @@ Batch_size = [16,32]
 np.random.seed(seed)
 NUM_WORDS = 50000
 #The input file for reading.The csv file is containing the class in numbers staring from 0. 
-with open("Harassment.txt","r")as f:
+with open("File_name.txt","r")as f:
 	texts = f.readlines()
 
 tokenizer = Tokenizer(NUM_WORDS)
@@ -41,7 +41,7 @@ word_index = tokenizer.word_index
 invert = dict(map(reversed, word_index.items()))
 #Padding of all the sentences to max length
 data = pad_sequences(sequences, maxlen=max_length,padding = 'post')
-data_1 = pd.read_csv("Harassment_class.csv")
+data_1 = pd.read_csv("File_class.csv")   ##This is a file containing the classes of each instanec in the same order as in text file.
 labels = data_1['class'].values
 labels_one_hot_encoded = np_utils.to_categorical(labels,2)
 print labels_one_hot_encoded
