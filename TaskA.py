@@ -41,7 +41,7 @@ word_index = tokenizer.word_index
 invert = dict(map(reversed, word_index.items()))
 #Padding of all the sentences to max length
 data = pad_sequences(sequences, maxlen=max_length,padding = 'post')
-data_1 = pd.read_csv("File_class.csv")   ##This is a file containing the classes of each instanec in the same order as in text file.
+data_1 = pd.read_csv("File_class.csv")   ##Convert all class into numerical like "Offensive" into '0' and Non-Offensive into '1'.This is a file containing the classes of each instance in the same order as in text file.
 labels = data_1['class'].values
 labels_one_hot_encoded = np_utils.to_categorical(labels,2)
 print labels_one_hot_encoded
